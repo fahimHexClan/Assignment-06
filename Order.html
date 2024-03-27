@@ -3,128 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <title>Order</title>
+    <link rel="stylesheet" href="Asserts/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Asserts/Order.css">
-
-
 </head>
 <body>
-    <header>
-        <h1>Order</h1>
-      <div> <input type="search" placeholder="Search Order"></div>
-    </header>
-    <br>
+<header class="bg-dark text-light p-4">
+    <h1>Order</h1>
+    <div class="input-group mb-3">
+        <input type="search" class="form-control" placeholder="Search Order">
+    </div>
+</header>
+<br>
 
-        <section>
-            <h2>Order</h2>
-            <div>
-            <label for="OrderDatePicker">Order Date</label><br>
-            <input type="date" id="OrderDatePicker"> <br><br>
+<section class="container">
+    <h2>Order</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="OrderDatePicker" class="form-label">Order Date</label>
+            <input type="date" class="form-control" id="OrderDatePicker">
+            <br>
 
-            <label for="OrderId">Order Id</label><br>
-            <input type="text" id="OrderId" placeholder="Enter Order Id"> <br><br>
+            <label for="OrderId" class="form-label">Order Id</label>
+            <input type="text" class="form-control" id="OrderId" placeholder="Enter Order Id">
+            <br>
 
-            <label for="CustomerId">Customer Id</label><br>
-            <input type="text" id="CustomerId" placeholder="Enter Order Id"> <br><br>
+            <label for="CustomerId" class="form-label">Customer Id</label>
+            <input type="text" class="form-control" id="CustomerId" placeholder="Enter Customer Id">
+            <br>
 
-            <label for="CustomerName">Customer Name</label><br>
-            <input type="text" id="CustomerName" placeholder="Enter Order Id"> <br><br>
+            <label for="CustomerName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control" id="CustomerName" placeholder="Enter Customer Name">
+            <br>
 
-            <label for="Total">Total</label><br>
-            <input type="text" id="Total" placeholder="Enter Total"> <br><br>
+            <label for="Total" class="form-label">Total</label>
+            <input type="text" class="form-control" id="Total" placeholder="Enter Total">
+            <br>
 
-            <label for="Discount">Discount</label><br>
-            <input type="text" id="Discount" placeholder="Enter Discount"> <br><br>
+            <label for="Discount" class="form-label">Discount</label>
+            <input type="text" class="form-control" id="Discount" placeholder="Enter Discount">
+            <br>
 
-            <label for="SubTotal">SubTotal</label><br>
-            <input type="text" id="SubTotal" placeholder="Enter SubTotal"> <br><br>
+            <label for="SubTotal" class="form-label">SubTotal</label>
+            <input type="text" class="form-control" id="SubTotal" placeholder="Enter SubTotal">
+            <br>
 
-            <label for="Cash">Cash</label><br>
-            <input type="text" id="Cash" placeholder="Enter Cash"> <br><br>
+            <label for="Cash" class="form-label">Cash</label>
+            <input type="text" class="form-control" id="Cash" placeholder="Enter Cash">
+            <br>
 
-            <label for="sale">Sale</label><br>
-            <input type="text" id="sale" placeholder="Enter Sale"> <br><br>
-
-            </div>
-
-
-                <button type="button">Add</button>
-                <button type="button">Delete</button>
-                <button type="button">Renew</button>
-                <button type="button">Reset</button>
-        </section>
-
-    <section>
-        <div>
-        <label for="ItemId">Item Id</label><br>
-        <input type="text" id="ItemId" placeholder="Enter ItemId"> <br><br>
-
-        <label for="ItemName">ItemName</label><br>
-        <input type="text" id="ItemName" placeholder="Enter ItemName"> <br><br>
-
-        <label for="ItemPrice">ItemPrice</label><br>
-        <input type="text" id="ItemPrice" placeholder="Enter ItemPrice"> <br><br>
-
-        <label for="QtyOnHand">QtyOnHand</label><br>
-        <input type="text" id="QtyOnHand" placeholder="Enter QtyOnHand"> <br><br>
-
-        <label for="Qty">Qty</label><br>
-        <input type="text" id="Qty" placeholder="Enter Qty"> <br><br>
-
+            <label for="Sale" class="form-label">Sale</label>
+            <input type="text" class="form-control" id="Sale" placeholder="Enter Sale">
+            <br>
         </div>
 
+        <div class="col-md-6">
+            <button type="button" class="btn btn-primary">Add</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning">Renew</button>
+            <button type="button" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+</section>
 
-            <button type="button">Add</button>
-            <button type="button">Reset</button>
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="ItemId" class="form-label">Item Id</label>
+            <input type="text" class="form-control" id="ItemId" placeholder="Enter ItemId">
+            <br>
 
-    </section>
-    <br><br>
+            <label for="ItemName" class="form-label">Item Name</label>
+            <input type="text" class="form-control" id="ItemName" placeholder="Enter Item Name">
+            <br>
 
-    <section>
-        <table border="1">
-            <thead>
-                <th>Item Code</th>
-                <th>Item Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-            </thead>
-            <tbody>
-            <tr>
-                <td>I001</td>
-                <td>T-shirt</td>
-                <td>1000.00</td>
-                <td>03</td>
-                <td>3000</td>
-            </tr>
-            <tr>
-                <td>I002</td>
-                <td>T-shirt</td>
-                <td>1000.00</td>
-                <td>02</td>
-                <td>2000</td>
-            </tr>
-            <tr>
-                <td>I003</td>
-                <td>T-shirt</td>
-                <td>1000.00</td>
-                <td>05</td>
-                <td>5000</td>
-            </tr>
-            <tr>
-                <td>I004</td>
-                <td>T-shirt</td>
-                <td>1000.00</td>
-                <td>07</td>
-                <td>7000</td>
-            </tr>
-            </tbody>
-        </table>
+            <label for="ItemPrice" class="form-label">Item Price</label>
+            <input type="text" class="form-control" id="ItemPrice" placeholder="Enter Item Price">
+            <br>
 
+            <label for="QtyOnHand" class="form-label">Qty On Hand</label>
+            <input type="text" class="form-control" id="QtyOnHand" placeholder="Enter Qty On Hand">
+            <br>
 
+            <label for="Qty" class="form-label">Qty</label>
+            <input type="text" class="form-control" id="Qty" placeholder="Enter Qty">
+            <br>
+        </div>
 
-    </section>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-primary">Add</button>
+            <button type="button" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+</section>
+<br><br>
 
+<section class="container">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Item Code</th>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>I001</td>
+            <td>T-shirt</td>
+            <td>1000.00</td>
+            <td>03</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>I002</td>
+            <td>T-shirt</td>
+            <td>1000.00</td>
+            <td>02</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>I003</td>
+            <td>T-shirt</td>
+            <td>1000.00</td>
+            <td>05</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>I004</td>
+            <td>T-shirt</td>
+            <td>1000.00</td>
+            <td>07</td>
+            <td>7000</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 
+<script src="Asserts/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
